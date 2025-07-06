@@ -1,11 +1,11 @@
-import java.io;
-import java.util;
+import java.io.*;
+import java.util.*;
 
 public class WordleGame {
 
   private static final int WORD_LENGTH = 5;
   private static final int MAX_ATTEMPTS = 6;
-  private static final String WORD_LIST_FILE = "wordslist.txt";
+  private static final String WORD_LIST_FILE = "wordlist.txt";
   private static final List<String> validWords = new ArrayList<>();
   private static String targetWord;
 
@@ -23,8 +23,8 @@ public class WordleGame {
       int attempts = 0;
       boolean guessedCorrectly = false;
 
-      while (attempts < Max_Attempts && !guessedCorrectly) {
-        System.out.printf("Attempt %d%d - Enter your %d-letter guess: ", attempts + 1, MAX_ATTEMPTS, WORD_LENGTH);
+      while (attempts < MAX_ATTEMPTS && !guessedCorrectly) {
+        System.out.printf("Attempt %d/%d - Enter your %d-letter guess: ", attempts + 1, MAX_ATTEMPTS, WORD_LENGTH);
         String guess = scanner.nextLine().toLowerCase();
 
         if (!isValidGuess(guess)) {
