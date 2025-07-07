@@ -1,3 +1,10 @@
+//package WordleEngine;
+
+// Name: Angel A. Cisneros
+// Date: July 6 2025
+//Game Logic Class
+
+
 import java.io.*;
 import java.util.*;
 
