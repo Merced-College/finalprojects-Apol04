@@ -1,3 +1,9 @@
+//package WordleGame
+
+// Name: Angel A. Cisneros
+// Date: July 6 2025
+// This is the main class that starts the game
+
 import java.util.Scanner;
 
 public class WordleGame {
