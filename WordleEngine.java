@@ -2,7 +2,7 @@
 
 // Name: Angel A. Cisneros
 // Date: July 6 2025
-//Game Logic Class
+//Game Logic Class that has all the functions that makes the world game work
 
 
 import java.io.*;
