@@ -32,9 +32,8 @@ public class WordleEngine {
   }
 
   // Checks if the guess is valid
-  public void startNewGame() {
-    Random rand = new Random();
-    targetWord = validWords.get(rand.nextInt(validWords.size()));
+  public boolean isValidGuess(String guess) {
+    return guess.length() == WORD_LENGTH && validWords.contains(guess);
   }
 
   // Check if the guess is correct
