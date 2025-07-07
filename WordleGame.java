@@ -25,7 +25,7 @@ public class WordleGame {
         String guess = scanner.nextLine().toLowerCase();
 
         //Confirms the guess
-        if (!isValidGuess(guess)) {
+        if (!engine.isValidGuess(guess)) {
           System.out.println("Invalid guess. Make sure it's valid 5 letter word.");
           continue;
         }
@@ -41,7 +41,7 @@ public class WordleGame {
       if (guessedCorrectly) {
         System.out.println("Congrats! You guessed the word.");
       } else {
-        System.out.println("You've used all your attempts. The word was: " + targetWord);
+        System.out.println("You've used all your attempts. The word was: " + engine.getTargetWord());
       }
 
       // Asks the user if the want to play the game again
